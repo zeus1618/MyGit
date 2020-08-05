@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/s_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subheader_text"
+            android:textStyle="bold"
+            tools:text="Repo1" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="This is the description"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xs_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_fork"
+                android:drawablePadding="@dimen/xxs_margin"
+                android:gravity="center_vertical"
+                tools:text="10" />
+
+            <TextView
+                android:id="@+id/watchers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s_margin"
+                android:drawableLeft="@drawable/ic_star_border_24"
+                android:drawablePadding="@dimen/xxs_margin"
+                android:gravity="center_vertical"
+                tools:text="10" />
+
+            <TextView
+                android:id="@+id/issues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s_margin"
+                android:drawableLeft="@drawable/ic_error_outline_24"
+                android:drawablePadding="@dimen/xxs_margin"
+                android:gravity="center_vertical"
+                tools:text="10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/xs_margin"
+        android:layout_marginBottom="@dimen/xs_margin"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
